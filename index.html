@@ -140,6 +140,7 @@
                 <input type="submit" value="Send" class="btn btn-dark" />
             </form>
         </div>
+        
         <div class="map">
             <!-- AIzaSyCskWmMzejCYFx8zJiHMm4lBf7Pe-rnG5M -->
         </div>
@@ -148,7 +149,22 @@
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">
         <div class="container">
-            <p>Training &copy; Pi Software | 31/1/2022</p>
+            <p>Training &copy; Pi Software <p id="current-time"></p>
+                <script>
+                    var curDate = new Date();
+                     
+                    // Ngày hiện tại
+                    var curDay = curDate.getDate();
+                    
+                    // Tháng hiện tại
+                    var curMonth = curDate.getMonth() + 1;
+                     
+                    // Năm hiện tại
+                    var curYear = curDate.getFullYear();
+                    
+                    // Gán vào thẻ HTML
+                    document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+                </script></div> </p>
         </div>
     </footer>
 
