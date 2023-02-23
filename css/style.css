@@ -36,7 +36,7 @@ p {
 }
 
 .text-primary {
-    color: #93cb52;
+    color: #66ccff;
 }
 
 .bg-light {
@@ -93,14 +93,14 @@ p {
 .btn {
     display: inline-block;
     color: #fff;
-    background: #93cb52;
+    background: #66ccff;
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background: #7ab346;
+    background: #66ccff;
 }
 
 .btn-dark {
@@ -109,7 +109,7 @@ p {
 }
 
 .bg-primary {
-    background: #93cb52;
+    background: #66ccff;
     color: #fff;
 }
 
@@ -148,7 +148,7 @@ p {
 }
 
 #navbar ul li a:hover {
-    background: #93cb52;
+    background: #66ccff;
     border-radius: 5px;
 }
 
@@ -191,7 +191,7 @@ p {
 }
 
 #what .items .item i {
-    background: #93cb52;
+    background: #66ccff;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
