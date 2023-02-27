@@ -29,7 +29,7 @@
         </ul>
     </div>
     <!-- Header: Showcase -->
-    <header id="showcase">
+    <header id="showcase" style="position: relative;">
         <div class="showcase-content">
             <h1 class="l-heading">Pi Software</h1>
             <p class="lead">
@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <!-- Section: What We Do -->
+    <!-- Section: Training Pi Software -->
     <section id="what" class="bg-light py-1">
         <div class="container">
             <h2 class="m-heading text-center">
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <!-- Section: Who We Are -->
+    <!-- Section: Training Pi Software -->
     <section id="who">
         <div class="who-img"></div>
         <div class="who-text bg-dark p-2">
@@ -104,11 +104,11 @@
                 <span class="text-primary">Our</span> Avatar    
             </h2>
             <div class="items py-1">
-                <div><img src="./img/logos/1.jpg" alt="Client" /><li>LE VIET HUNG</li></div>
-                <div><img src="./img/logos/1.jpg" alt="Client" /><li>NGUYEN QUOC PHUONG</li></div>
-                <div><img src="./img/logos/1.jpg" alt="Client" /><li>VO MINH ANH TUAN</li></div>
-                <div><img src="./img/logos/1.jpg" alt="Client" /><li>VIET PHOP</li></div>
-                <div><img src="./img/logos/1.jpg" alt="Client" /><li>HOANG CONG TRI</li></div>
+            <div style="display: flex;flex-direction: column;align-items: center;"><img src="./img/logos/2.jpg" alt="Client"><p>LE VIET HUNG</p></div>
+            <div style="display: flex;flex-direction: column;align-items: center;"><img src="./img/logos/2.jpg" alt="Client"><p>QUOC PHUONG</p></div>
+            <div style="display: flex;flex-direction: column;align-items: center;"><img src="./img/logos/1.jpg" alt="Client"><p>ANH TUAN</p></div>
+            <div style="display: flex;flex-direction: column;align-items: center;"><img src="./img/logos/1.jpg" alt="Client"><p>VIET PHOP</p></div>
+            <div style="display: flex;flex-direction: column;align-items: center;"><img src="./img/logos/1.jpg" alt="Client"><p>CONG TRI</p></div>
            
             </div>
         
@@ -149,22 +149,15 @@
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">
         <div class="container">
-            <p>Training &copy; Pi Software <p id="current-time"></p>
-                <script>
-                    var curDate = new Date();
-                     
-                    // Ngày hiện tại
-                    var curDay = curDate.getDate();
-                    
-                    // Tháng hiện tại
-                    var curMonth = curDate.getMonth() + 1;
-                     
-                    // Năm hiện tại
-                    var curYear = curDate.getFullYear();
-                    
-                    // Gán vào thẻ HTML
-                    document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
-                </script></div> </p>
+            <p>Training &copy; Pi Software <p id="dateTime"></p>
+            <script>
+                var today = new Date();
+                var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                var dateTime = time+' | '+date;
+             
+                document.getElementById("dateTime").innerHTML = dateTime;
+             </script>
         </div>
     </footer>
 

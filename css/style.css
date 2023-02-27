@@ -171,7 +171,6 @@ p {
     padding: 0 2rem;
     /* Overlay */
     position: absolute;
-    top: 65px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -216,9 +215,14 @@ p {
 }
 
 #clients .items img {
-    display: block;
+    display: flex;
     margin: auto;
     width: 70%;
+    border-radius:50%;
+}
+
+#quocphuong{
+    width: 200%;
 }
 
 /* Section: Contact */
